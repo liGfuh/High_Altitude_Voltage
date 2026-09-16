@@ -10,6 +10,7 @@ This project aims to create a high-voltage power supply — Этот проек�
 ## 📊 Статус проекта / Project Status
 
 **Уровень готовности / Progress:**
+
 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ **17%**
 
 * **Текущий этап:** Проектирование принципиальной схемы и выбор компонентов (Phase 1: Schematic & Component Selection).
