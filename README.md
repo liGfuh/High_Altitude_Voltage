@@ -29,7 +29,8 @@ This project aims to create a high-voltage power supply — Этот проек�
 * **Максимальный и минимальный результат / Maximum and minimum result:**
   * *Максимальный:* [136 кВ / Не подсчитано Вт]
   * *Минимальный:* [11 кВ / Не подсчитано Вт]
-<img width="950" height="899" alt="Снимок экрана 2026-09-15 222135" src="https://github.com/user-attachments/assets/da3c3ab0-a4d2-4e6a-a7f1-9b7472cbd8de" />
+<img width="1910" height="1027" alt="image" src="https://github.com/user-attachments/assets/a554dd5f-e0b2-42f9-969d-98df24e3442c" />
+
 <img width="949" height="903" alt="Снимок экрана 2026-09-15 221355" src="https://github.com/user-attachments/assets/7cc99c23-0db8-4dd7-a7b4-c802baa8c088" />
 
 ### 🗺 Дорожная карта / Roadmap
