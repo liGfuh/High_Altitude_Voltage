@@ -5,10 +5,10 @@ D1 N004 G1 D
 D2 0 N004 D
 D3 N005 G1 D
 D4 0 N005 D
-V2 N008 S PULSE(0 12 20.6u 100n 100n 16.2u 38.3u)
-V3 N011 0 PULSE(0 12 0 100n 100n 16.2u 38.3u)
-V4 N013 0 PULSE(0 12 19.1u 100n 100n 16.2u 38.3u)
-V5 N006 S1 PULSE(0 12 1.5u 100n 100n 16.2u 38.3u)
+V2 N008 S PULSE(0 12 29.9u 100n 100n 4.0u 36.7u)
+V3 N011 0 PULSE(0 12 0 100n 100n 15.6u 36.7u)
+V4 N013 0 PULSE(0 12 18.4u 100n 100n 15.6u 36.7u)
+V5 N006 S1 PULSE(0 12 11.5u 100n 100n 4.0u 36.7u)
 L1 N015 N023 100µ Rser=0.05
 L2 0 N016 3 Rser=300 Cpar=16p
 D5 S G1 D
@@ -46,7 +46,7 @@ C13 N020 N019 {C_val}
 D15 N026 N020 D_HV
 D16 N020 N027 D_HV
 C14 N027 N026 {C_val}
-C15 N029 0 50n Rser=2
+C15 N029 0 220p Rser=2
 R7 N009 N008 10
 R8 N007 N006 10
 R9 N012 N011 10
@@ -54,10 +54,10 @@ R10 N014 N013 10
 D17 N027 N021 D_HV
 C16 N021 N020 {C_val}
 C17 N028 N027 {C_val}
-L5 N005 N004 200m Rser=1
+L5 N005 N004 20m Rser=1
 C10 N025 N024 {C_val}
 R§NTC1 N003 N002 R=0.1 + 10*exp(-time/0.05)
-L3 S1 N015 10µ Rser=0.5
+L3 S1 N015 1µ Rser=0.5
 C6 N023 S 336n Rser=0.05
 D19 N021 N028 D_HV
 D20 N028 N022 D_HV
@@ -65,8 +65,8 @@ C19 N022 N021 {C_val}
 D21 N022 N029 D_HV
 C21 N029 N028 {C_val}
 C18 G1 0 200µ
-L4 N003 0 200m Rser=1
-R1 VOID N029 4.7Meg
+L4 N003 0 20m Rser=1
+R1 VOID N029 1Meg
 C23 0 VOID 220p
 .model D D
 .lib C:\Users\mrnuo\AppData\Local\LTspice\lib\cmp\standard.dio
@@ -74,12 +74,12 @@ C23 0 VOID 220p
 .model PMOS PMOS
 .lib C:\Users\mrnuo\AppData\Local\LTspice\lib\cmp\standard.mos
 K1 L1 L2 0.98
-.param C_val=4.7n
+.param C_val=2n
 .options method=gear reltol=0.01 vntol=1m abstol=10u solver=alt gmin=1e-10
 .model MYMOS NMOS(Vto=4 Kp=5 Vds=600 Ron=0.57)
 .model D_HV D(Is=10n Rs=50 Bv=25000 Ibv=5u Cjo=2p Vj=0.75 M=0.333 TT=15n)
 .model D_boot D(Is=1n Rs=0.5 Bv=600 Cjo=5p TT=25n)
-.tran 0.25s startup
+.tran 50ms startup
 K2 L4 L5 0.98
 .backanno
 .end
