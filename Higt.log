@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
 Circuit: D:\AIPIT\High_Altitude_Voltage\Higt.net
-Start Time: Fri Sep 25 16:05:51 2026
+Start Time: Fri Sep 25 16:19:58 2026
 Options:reltol=0.03 vntol=100m abstol=1m chgtol=1e-10 trtol=7 maxstep=1u solver=alt gmin=1e-9
 solver = Alternate
 Maximum thread count: 12
@@ -18,7 +18,7 @@ WARNING: Node nc_03 is floating.
 Direct Newton iteration succeeded in finding operating point.
 
 Simulation stopped by user.
-Total elapsed time: 99.292 seconds.
+Total elapsed time: 3.523 seconds.
 
 Files loaded:
 D:\AIPIT\High_Altitude_Voltage\Higt.net
